@@ -11,10 +11,9 @@ import { protect, restricTo } from './controllers/userController';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import path from 'path';
-// import basicStripeInit from "./utils/stripeBasicInit";
 dotenv.config();
 
-connectDatabase('TriNit');
+connectDatabase('LingQ');
 // basicStripeInit();
 const app = express();
 app.use(express.json());
@@ -29,14 +28,6 @@ app.use(
 
 const port = process.env.PORT || 3000;
 app.use('/public', express.static(path.join(__dirname, 'public')));
-// app.use("/api/users", userRouter);
-// app.use("/api/parties", partyRouter);
-// app.use("/api/products", productRouter);
-// app.use("/api/timeOffice", timeOfficeRouter);
-// app.use("/api/weights", weightsRouter);
-// app.use("/api/vouchers", voucherRouter);
-// app.use("/api/payments", accountantRouter);
-// app.use("/api/report", reportRouter);
 app.use('/api/users', userRouter);
 app.use('/api/users/tutor', tutorRuter);
 app.use('/api/courses', courseRouter);

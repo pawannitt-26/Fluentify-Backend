@@ -3,7 +3,6 @@ import mongoose, { ObjectId, Query } from 'mongoose';
 import Tutor from '../models/tutorModel';
 import Courses from '../models/courseModel';
 import EnrolledCourses from '../models/enrolledCoursesModel';
-// import stripe from '../utils/stripe';
 
 const getAllTutorCourses = expressAsyncHandler(async (req: any, res) => {
   const tutorID = req.params.id;

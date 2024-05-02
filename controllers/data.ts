@@ -1,18 +1,4 @@
 export const languages = [
-<<<<<<< HEAD
-  'English',
-  'Spanish',
-  'French',
-  'German',
-  'Chinese',
-  'Japanese',
-  'Korean',
-  'Arabic',
-  'Russian',
-  'Italian',
-  'Portuguese',
-  'Dutch',
-=======
   "English",
   "Spanish",
   "French",
@@ -126,5 +112,4 @@ export const languages = [
   "Twi",
   "Venda",
   "Xitsonga",
->>>>>>> 4a27362 (feat(backend): enrolled courses routes/schema, courses schema/routes)
 ];
